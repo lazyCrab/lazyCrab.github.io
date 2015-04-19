@@ -11,14 +11,15 @@
   </canvas>
   <canvas id="wordCanv" width="1256" height="665" style="border:1px solid black;display:none;">
   </canvas>
-  <textarea id="wordsTxt" style="position:absolute;left:-100;top:-100;" onblur="init();" onkeyup="init();" onclick="init();">☺ רפאלה תודה על הכל ☺</textarea>
+  <textarea id="wordsTxt" style="position:absolute;left:-100;top:-100;" onblur="init();" onkeyup="init();" onclick="init();">☺ רפאלה תודה על הכל ☺
+  מאריק המגניב</textarea>
   
   <script type="text/javascript">
       
     var l=document.location + "";
     l=l.replace(/%20/g," ");
     var index=l.indexOf('?t=');
-    //if(index==-1) document.location=l + "?t=☺ רפאלה תודה על הכל ☺";
+    //if(index==-1) document.location=l + "?t=☺ רפאלה תודה על הכל ☺\nמאריק המגניב";
   
     var pixels=new Array();
     var canv=$('canv');
@@ -225,7 +226,7 @@
     }
     
     wordsTxt.focus();
-    wordsTxt.value="☺ רפאלה תודה על הכל ☺";
+    wordsTxt.value="☺ רפאלה תודה על הכל ☺\nמאריק המגניב";
     
     resHalfFloor=Math.floor(resolution/2);
     resHalfCeil=Math.ceil(resolution/2);
